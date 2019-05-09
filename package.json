@@ -17,7 +17,8 @@
   ],
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
-    "build": "tsc -p tsconfig.json",
+    "test": "jest",
+    "build": "tsc -p tsconfig.build.json",
     "version": "standard-version --no-verify"
   },
   "dependencies": {
@@ -29,9 +30,11 @@
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
+    "@types/jest": "^24.0.12",
     "@types/node": "^12.0.0",
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
+    "chromedriver": "^74.0.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-prettier": "^3.0.1",
@@ -40,6 +43,7 @@
     "jest-environment-node": "^24.8.0",
     "prettier": "^1.17.0",
     "standard-version": "^6.0.1",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.4.5"
   },
   "keywords": [
