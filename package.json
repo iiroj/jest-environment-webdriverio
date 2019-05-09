@@ -1,0 +1,50 @@
+{
+  "name": "jest-environment-webdriverio",
+  "version": "0.1.0",
+  "description": "Run your tests using Jest and WebdriverIO",
+  "author": "Iiro Jäppinen <iiro@jappinen.fi> (https://iiro.fi)",
+  "license": "MIT",
+  "homepage": "https://github.com/iiroj/jest-environment-webdriverio",
+  "repository": "github:iiroj/jest-environment-webdriverio",
+  "bugs": "https://github.com/iiroj/jest-environment-webdriverio/issues",
+  "engines": {
+    "node": ">= 8.10"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc -p tsconfig.json",
+    "version": "standard-version --no-verify"
+  },
+  "dependencies": {
+    "webdriverio": "^5.8.3"
+  },
+  "peerDependencies": {
+    "jest-environment-node": "^24.8.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "@types/node": "^12.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^2.2.0",
+    "jest": "^24.8.0",
+    "jest-environment-node": "^24.8.0",
+    "prettier": "^1.17.0",
+    "standard-version": "^6.0.1",
+    "typescript": "^3.4.5"
+  },
+  "keywords": [
+    "appium",
+    "jest-environment",
+    "jest",
+    "selenium",
+    "webdriver",
+    "webdriverio"
+  ]
+}
