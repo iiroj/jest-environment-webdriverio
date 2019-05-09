@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/iiroj/jest-environment-webdriverio/compare/v0.2.0...v0.2.1) (2019-05-09)
+
+
+### Bug Fixes
+
+* delete session on Jest teardown ([64647cf](https://github.com/iiroj/jest-environment-webdriverio/commit/64647cf))
+* use correct type for browser ([c485100](https://github.com/iiroj/jest-environment-webdriverio/commit/c485100))
+
+
+
 ## [0.2.0](https://github.com/iiroj/jest-environment-webdriverio/compare/v0.1.0...v0.2.0) (2019-05-09)
 
 
