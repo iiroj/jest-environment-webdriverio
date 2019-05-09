@@ -12,6 +12,9 @@
   },
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.d.ts"
+  ],
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc -p tsconfig.json",
