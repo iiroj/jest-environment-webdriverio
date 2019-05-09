@@ -1,5 +1,5 @@
 import NodeEnvironment from "jest-environment-node";
-import webdriverio from "webdriverio";
+import * as webdriverio from "webdriverio";
 
 declare global {
   namespace NodeJS {
