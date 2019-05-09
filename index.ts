@@ -5,6 +5,8 @@ declare global {
   namespace NodeJS {
     interface Global {
       browser: webdriverio.Browser;
+      $: $;
+      $$: $$;
       remote: typeof webdriverio.remote;
     }
   }
@@ -28,6 +30,8 @@ export default class WebdriverIOEnvironment extends NodeEnvironment {
     await super.setup();
     this.global.remote = webdriverio.remote;
     this.global.browser = await this.global.remote(this.options);
+    this.global.$ = this.global.browser.$;
+    this.global.$$ = this.global.browser.$$;
   }
 
   public async teardown(): Promise<void> {
