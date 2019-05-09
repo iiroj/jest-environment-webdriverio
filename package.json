@@ -1,6 +1,6 @@
 {
   "name": "jest-environment-webdriverio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Run your tests using Jest and WebdriverIO",
   "author": "Iiro Jäppinen <iiro@jappinen.fi> (https://iiro.fi)",
   "license": "MIT",
