@@ -4,9 +4,9 @@ import webdriverio from "webdriverio";
 declare global {
   namespace NodeJS {
     interface Global {
-      browser: webdriverio.Browser;
-      $: $;
-      $$: $$;
+      browser: typeof browser;
+      $: typeof $;
+      $$: typeof $$;
       remote: typeof webdriverio.remote;
     }
   }

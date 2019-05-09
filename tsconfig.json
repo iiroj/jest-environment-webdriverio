@@ -10,6 +10,9 @@
     "pretty": true,
     "resolveJsonModule": true,
     "strict": true,
-    "target": "es2017"
+    "target": "es2017",
+    "types": [
+      "jest"
+    ]
   }
 }
