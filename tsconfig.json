@@ -3,12 +3,10 @@
     "declaration": true,
     "esModuleInterop": true,
     "lib": ["es2017"],
-    "moduleResolution": "node",
     "module": "commonjs",
     "noResolve": false,
     "noUnusedParameters": true,
     "pretty": true,
-    "resolveJsonModule": true,
     "strict": true,
     "target": "es2017",
     "types": [

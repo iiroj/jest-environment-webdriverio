@@ -42,3 +42,5 @@ export default class WebdriverIOEnvironment extends NodeEnvironment {
     await super.teardown();
   }
 }
+
+module.exports = WebdriverIOEnvironment;
