@@ -1,6 +1,8 @@
 module.exports = {
+  globalSetup: "<rootDir>/globalSetup.ts",
+  globalTeardown: "<rootDir>/globalTeardown.ts",
   preset: "ts-jest",
-  testEnvironment: "./index",
+  testEnvironment: "../index",
   testEnvironmentOptions: {
     port: 9515,
     path: "/",
