@@ -36,7 +36,7 @@ export default class WebdriverIOEnvironment extends NodeEnvironment {
 
   public async teardown(): Promise<void> {
     if (this.global.browser) {
-      this.global.browser.deleteSession();
+      await this.global.browser.deleteSession();
     }
 
     await super.teardown();
