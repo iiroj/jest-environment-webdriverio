@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/iiroj/jest-environment-webdriverio/compare/v0.2.2...v0.2.3) (2019-05-10)
+
+
+### Tests
+
+* add working test ([02d5d66](https://github.com/iiroj/jest-environment-webdriverio/commit/02d5d66))
+
+
+
 ### [0.2.2](https://github.com/iiroj/jest-environment-webdriverio/compare/v0.2.1...v0.2.2) (2019-05-09)
 
 
