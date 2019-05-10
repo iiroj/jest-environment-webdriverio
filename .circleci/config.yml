@@ -3,7 +3,7 @@ version: 2.1
 executors:
   worker:
     docker:
-      - image: circleci/node
+      - image: circleci/node:lts-browsers
     working_directory: ~/ci
 
 jobs:
