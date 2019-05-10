@@ -18,7 +18,7 @@ jobs:
           root: ~/ci
           paths: node_modules
 
-  test:
+  lint:
     executor: worker
     steps:
       - checkout
@@ -27,9 +27,6 @@ jobs:
       - run:
           name: lint
           command: npm run lint
-      - run:
-          name: test
-          command: npm test
 
   build:
     executor: worker
@@ -43,6 +40,16 @@ jobs:
       - persist_to_workspace:
           root: ~/ci
           paths: .
+
+  test:
+    executor: worker
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/ci
+      - run:
+          name: test
+          command: npm test
 
   publish:
     executor: worker
@@ -64,7 +71,7 @@ workflows:
           filters:
               tags:
                 only: /.*/
-      - test:
+      - lint:
           requires:
             - install
           filters:
@@ -76,10 +83,18 @@ workflows:
           filters:
             tags:
               only: /.*/
+      - test:
+          requires:
+            - install
+            - build
+          filters:
+            tags:
+              only: /.*/
       - publish:
           requires:
-            - test
+            - lint
             - build
+            - test
           context: npm token
           filters:
             tags:
