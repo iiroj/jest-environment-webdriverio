@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.5...v1.0.6) (2019-07-07)
+
+
+### Build System
+
+* add husky, commitlint and lint-staged ([5fab5c9](https://github.com/iiroj/jest-environment-webdriverio/commit/5fab5c9))
+
+
+
 ### [1.0.5](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.4...v1.0.5) (2019-07-06)
 
 
