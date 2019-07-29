@@ -9,7 +9,7 @@ describe("DuckDuckGo", (): void => {
 
   it("short url should redirect", async (): Promise<void> => {
     await browser.url("https://duck.com");
-    expect(await browser.getUrl()).toEqual("https://duckduckgo.com/");
+    expect(await browser.getUrl()).toEqual("https://duckduckgo.com/?t=ht");
   });
 
   it("should contain the Duck logo", async (): Promise<void> => {
