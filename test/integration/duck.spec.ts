@@ -21,6 +21,5 @@ describe("DuckDuckGo", (): void => {
       value:
         'url("https://duckduckgo.com/assets/logo_homepage.normal.v108.svg")'
     });
-    expect(await logo.getText()).toContain("About DuckDuckGo");
   });
 });
