@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
+    "typecheck": "tsc",
     "test": "jest --projects test",
     "build": "tsc -p tsconfig.build.json",
     "version": "standard-version --no-verify"
@@ -37,7 +38,7 @@
   },
   "standard-version": {
     "scripts": {
-      "prerelease": "npm run lint && npm test && npm run build"
+      "prerelease": "npm run lint && npm run typecheck && npm test && npm run build"
     }
   },
   "dependencies": {
