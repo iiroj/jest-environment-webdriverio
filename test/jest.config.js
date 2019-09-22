@@ -7,7 +7,10 @@ module.exports = {
     port: 9515,
     path: "/",
     capabilities: {
-      browserName: "chrome"
+      browserName: "chrome",
+      "goog:chromeOptions": {
+        args: ["--headless", "--disable-gpu"]
+      }
     }
   }
 };
