@@ -9,7 +9,7 @@ describe("DuckDuckGo", (): void => {
 
   it("short url should redirect", async (): Promise<void> => {
     await browser.url("https://duck.com");
-    expect(await browser.getUrl()).toEqual("https://duckduckgo.com/?t=ht");
+    expect(await browser.getUrl()).toMatch("https://duckduckgo.com/");
   });
 
   it("should contain the Duck logo", async (): Promise<void> => {
@@ -19,7 +19,7 @@ describe("DuckDuckGo", (): void => {
     expect(await logo.getCSSProperty("background-image")).toMatchObject({
       property: "background-image",
       value:
-        'url("https://duckduckgo.com/assets/logo_homepage.normal.v108.svg")'
+        'url("https://duckduckgo.com/assets/logo_homepage_mobile.normal.v108.unoptimized.svg")'
     });
   });
 });
