@@ -15,7 +15,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     container:
-      image: selenium/standalone-chrome:3.141.59-vanadium
+      image: selenium/standalone-chrome:3.141.59-yttrium
       options: --user 0
     steps:
       - uses: actions/checkout@master
