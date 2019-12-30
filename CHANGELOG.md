@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.15](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.14...v1.0.15) (2019-12-30)
+
+
+### Bug Fixes
+
+* update chrome version in CI ([f27c46b](https://github.com/iiroj/jest-environment-webdriverio/commit/f27c46b0d64cb12b79f8320a77a61fe5eb3b797a))
+
 ### [1.0.14](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.13...v1.0.14) (2019-12-30)
 
 ### [1.0.13](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.12...v1.0.13) (2019-09-25)
