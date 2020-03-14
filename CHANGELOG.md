@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.16](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.15...v1.0.16) (2020-03-14)
+
+
+### Bug Fixes
+
+* add @types/request ([7d01e1c](https://github.com/iiroj/jest-environment-webdriverio/commit/7d01e1cb8157f7956a2754542b0ff6290accbe50))
+* add chromedriver as peer dependency ([c8cbe2c](https://github.com/iiroj/jest-environment-webdriverio/commit/c8cbe2c7a2892b90bb9848444995a520034c1050))
+
 ### [1.0.15](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.14...v1.0.15) (2019-12-30)
 
 
