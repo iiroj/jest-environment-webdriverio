@@ -42,34 +42,34 @@
     }
   },
   "dependencies": {
-    "webdriverio": "^5.21.0"
+    "webdriverio": "^6.7.0"
   },
   "peerDependencies": {
-    "chromedriver": "^80.0.1",
-    "jest-environment-node": "^25.1.0"
+    "chromedriver": "^86.0.0",
+    "jest-environment-node": "^26.6.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "@types/chromedriver": "^2.38.0",
-    "@types/jest": "^25.1.4",
-    "@types/node": "^13.9.1",
-    "@types/request": "2.48.4",
-    "@typescript-eslint/eslint-plugin": "^2.23.0",
-    "@typescript-eslint/parser": "^2.23.0",
-    "chromedriver": "^80.0.1",
-    "commitlint": "^8.3.5",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.2.3",
-    "jest": "^25.1.0",
-    "jest-environment-node": "^25.1.0",
-    "lint-staged": "^10.0.8",
-    "prettier": "^1.19.1",
-    "standard-version": "^7.1.0",
-    "ts-jest": "^25.2.1",
-    "typescript": "^3.8.3"
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/chromedriver": "^81.0.0",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.5",
+    "@types/request": "2.48.5",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "chromedriver": "^86.0.0",
+    "commitlint": "^11.0.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "jest": "^26.6.1",
+    "jest-environment-node": "^26.6.1",
+    "lint-staged": "^10.5.0",
+    "prettier": "^2.1.2",
+    "standard-version": "^9.0.0",
+    "ts-jest": "^26.4.3",
+    "typescript": "^4.0.5"
   },
   "keywords": [
     "appium",
