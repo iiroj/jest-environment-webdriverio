@@ -16,14 +16,15 @@
     "index.d.ts"
   ],
   "scripts": {
-    "lint": "eslint --ext .js,.ts .",
+    "lint:base": "eslint --ext .js,.ts",
+    "lint": "npm run lint:base -- .",
     "typecheck": "tsc",
     "test": "jest --projects test",
     "build": "tsc -p tsconfig.build.json",
     "version": "standard-version --no-verify"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "npm run lint"
+    "*.{js,ts,tsx}": "npm run lint:base --"
   },
   "commitlint": {
     "extends": [
