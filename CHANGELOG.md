@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.17...v2.0.0) (2020-10-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v8 is no longer supported
+
+* sync required node version with jest ([e4ab3e3](https://github.com/iiroj/jest-environment-webdriverio/commit/e4ab3e3562051994335e5a3234d60acd1c0f9b2e))
+
 ### [1.0.17](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.16...v1.0.17) (2020-03-14)
 
 ### [1.0.16](https://github.com/iiroj/jest-environment-webdriverio/compare/v1.0.15...v1.0.16) (2020-03-14)
