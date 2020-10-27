@@ -19,7 +19,7 @@ describe("DuckDuckGo", (): void => {
     expect(await logo.getCSSProperty("background-image")).toMatchObject({
       property: "background-image",
       value:
-        'url("https://duckduckgo.com/assets/logo_homepage_mobile.normal.v108.unoptimized.svg")'
+        'url("https://duckduckgo.com/assets/logo_homepage_mobile.normal.v108.unoptimized.svg")',
     });
   });
 });
