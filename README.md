@@ -24,6 +24,7 @@ yarn add --dev jest-environment-webdriverio
 
 Set `jest-environment-webdriverio` as the `testEnvironment` in your [Jest configuration](https://jestjs.io/docs/en/configuration). Additionally, specify any [WebdriverIO options](https://webdriver.io/docs/options.html) in `testEnvironmentOptions`:
 
+**Using CrossBrowserTesting**
 ```js
 // jest.config.js
 module.exports = {
@@ -43,6 +44,35 @@ module.exports = {
     }
   }
 };
+```
+**Using Browserstack**
+```js
+//jest.config.js
+module.exports = {
+  testEnvironment: "jest-environment-webdriverio",
+  testEnvironmentOptions: {
+    // Browserstack config
+    user: BROWSERSTACK_USERNAME,
+    key: BROWSERSTACK_KEY, // Your BrowserStack credentials go here
+    capabilities: {
+        browser: 'Chrome', // Signifies on what platform your test will run. You can define other capabilities here.
+        platformName: 'MAC', // OS platform
+        name: 'Chrome_test',
+        build: 'browserstack-build', // The name of test and name of build is being defined here
+        'browserstack.debug': 'true', // for enabling visual logs
+        'browserstack.networkLogs': 'true', // to enable network logs to be logged
+        'browserstack.local': 'true' // to enable network for localhost
+    },
+    logLevel: 'error',
+    coloredLogs: true,
+    screenshotPath: './errorShots/',
+    baseUrl: 'https://localhost:8443/',
+    waitforTimeout: 30000,
+    connectionRetryTimeout: 90000,
+    connectionRetryCount: 3
+  }
+};
+    
 ```
 
 ## Usage
